@@ -7,13 +7,67 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
 
+    @IBOutlet weak var valueLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        configuerUI()
+        configureButtons()
     }
 
+    func configuerUI() {
+        view.backgroundColor = .black
+        
+    }
 
+    func configureButtons() {
+        
+    }
+    
+    // 버튼 액션
+    
+    @IBAction func numberButton(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func dotButton(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func acButton(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func pmButton(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func percentButton(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func equalButton(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func sumButton(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func subButton(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func multiButton(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func divButton(_ sender: UIButton) {
+        
+    }
+    
+    
 }
 
