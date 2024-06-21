@@ -8,28 +8,28 @@
 import UIKit
 
 final class ViewController: UIViewController {
+    
+    var valueArr = ["0"]
+    var result = 0
 
     @IBOutlet weak var valueLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configuerUI()
-        configureButtons()
     }
 
     func configuerUI() {
         view.backgroundColor = .black
         
     }
-
-    func configureButtons() {
-        
-    }
     
     // 버튼 액션
     
     @IBAction func numberButton(_ sender: UIButton) {
-        
+        guard let number = sender.currentTitle else { return }
+        valueArr.append(number)
+        print(valueArr)
     }
     
     @IBAction func dotButton(_ sender: UIButton) {
@@ -37,7 +37,7 @@ final class ViewController: UIViewController {
     }
     
     @IBAction func acButton(_ sender: UIButton) {
-        
+        valueArr.removeAll()
     }
     
     @IBAction func pmButton(_ sender: UIButton) {
@@ -45,7 +45,7 @@ final class ViewController: UIViewController {
     }
     
     @IBAction func percentButton(_ sender: UIButton) {
-        
+    
     }
     
     @IBAction func equalButton(_ sender: UIButton) {
@@ -53,7 +53,6 @@ final class ViewController: UIViewController {
     }
     
     @IBAction func sumButton(_ sender: UIButton) {
-        
     }
     
     @IBAction func subButton(_ sender: UIButton) {
@@ -67,7 +66,6 @@ final class ViewController: UIViewController {
     @IBAction func divButton(_ sender: UIButton) {
         
     }
-    
     
 }
 
